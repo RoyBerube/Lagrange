@@ -1,11 +1,7 @@
 title:  Roy Berube
 tagline:  meanderings
-author:
-  name: "Roy Berube"
-<<<<<<< HEAD
-  twitter:  paululele
-=======
->>>>>>> gh-pages
+author: Roy Berube
+name: "Roy Berube"
 
 menu:
 - {name: 'About', url: 'about.html'}
