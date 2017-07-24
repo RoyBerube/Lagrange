@@ -2,6 +2,7 @@
 
 paginate:            5
 disqus:              #"your-disqus"
+encoding: utf-8
 
 # Build settings
 markdown:            kramdown

@@ -5,8 +5,8 @@ author: "Roy Berube"
 categories: journal
 tags: [documentation]
 image:
-  feature: cutting.jpg
-  teaser: cutting-teaser.jpg
+  feature: crossing1.jpg
+  teaser: crossing1-teaser.jpg
   credit:
   creditlink:
 ---

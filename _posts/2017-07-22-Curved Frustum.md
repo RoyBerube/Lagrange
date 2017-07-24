@@ -5,8 +5,8 @@ author: "Roy Berube"
 categories: 3D graphics
 tags: [3D, graphics]
 image:
-  feature: cutting.jpg
-  teaser: cutting-teaser.jpg
+  feature: rail3.jpg
+  teaser: rail3-teaser.jpg
   credit:
   creditlink:
 ---
