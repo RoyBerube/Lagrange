@@ -29,7 +29,8 @@ The same page on Rosetta Code has links to source pages for the [algorithm.](htt
 
 The formula is based on Euler's refinement:
 
-![Euler Formula](https://royberube.github.io/assets/img/EulerFormula.png)
+![Euler Formula](https://royberube.github.io/assets/img/EulerFormula.PNG)
+
 
 Initially I implemented a version based on a fraction class and while that version worked and was easy to read, it was painfully slow. The fraction class was clearly a huge bottleneck. Using what I had learned, I then wrote an optimized version based on fractions without the fraction class. Here is the code. To use it instantiate the class and call the CalcPi() method.
 
