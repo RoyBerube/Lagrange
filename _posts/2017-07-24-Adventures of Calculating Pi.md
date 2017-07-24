@@ -29,11 +29,11 @@ The same page on Rosetta Code has links to source pages for the [algorithm.](htt
 
 The formula is based on Euler's refinement:
 
-![Euler Formula](/assets/img/EulerFormula.png)
+![Euler Formula](https://royberube.github.io/assets/img/EulerFormula.png)
 
 Initially I implemented a version based on a fraction class and while that version worked and was easy to read, it was painfully slow. The fraction class was clearly a huge bottleneck. Using what I had learned, I then wrote an optimized version based on fractions without the fraction class. Here is the code. To use it instantiate the class and call the CalcPi() method.
 
-``` c#
+```c#
 /// <summary>
 /// Another implementation of Pi spigot.
 /// Optimization for speed is the goal this time, while remaining readable.
@@ -79,7 +79,7 @@ class OptimizedPiSpigot
                 digits--;
             }
             else
-            // Consume input step of Leibniz series.
+            // Consume input step of Taylor series.
             {
                 CalcSeries();
             }
@@ -116,6 +116,6 @@ class OptimizedPiSpigot
 }
 ```
 
-The reason to use fractions is that each step has absolute precision without the precision loss if we were to use decimal numbers instead. Even in my optimized version the fraction values blow up immensely. Note the comments in the code for some timing measurements. Time required increases exponentially; I did try runs over 100k digits because of this.
+The reason to use fractions is that each step has absolute precision without the precision loss if we were to use decimal numbers instead. Even in my optimized version the fraction values blow up immensely. Note the comments in the code for some timing measurements. Time required increases exponentially; I did not bother to try runs over 100k digits because of this.
 
 I later experimented with some other algorithms in C# that are much quicker, but this is enough for now.
