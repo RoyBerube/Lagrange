@@ -33,6 +33,8 @@ The formula is based on Euler's refinement:
 Initially I implemented a spigot version based on a fraction class and while that version worked and was easy to read, it was painfully slow. The fraction class was clearly a huge bottleneck. Using what I had learned, I then wrote an optimized version based on fractions without the fraction class. Here is the code. To use it instantiate the class and call the CalcPi() method.
 
 ```c#
+using System;
+using System.Numerics;
 /// <summary>
 /// Another implementation of Pi spigot.
 /// Optimization for speed is the goal this time, while remaining readable.
