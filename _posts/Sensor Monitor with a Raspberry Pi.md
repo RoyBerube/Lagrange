@@ -51,7 +51,7 @@ The rate limiter node is there to limit the amount of emails sent. Without it, a
 
 Here is what the web user interface looks like when deployed:
 
-![Node Red User Interface](/assets/img/NodeRedUser.PNG)
+![Node Red User Interface](/assets/img/NodeRedOutput.PNG)
 
  This also displays the current temperature obtained with a web scraping Python script. When I check that the device is running it is handy to get the temperature at the same time. This pulls the temperature from Environment Canada's reading at Blatchford Field in Edmonton, Alberta. The *Node Red* layout is quite simple:  
  
