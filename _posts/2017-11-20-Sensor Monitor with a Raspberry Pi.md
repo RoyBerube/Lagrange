@@ -15,7 +15,7 @@ So I had a Raspberry Pi not getting much use. I had been using it with OSMC as a
 
 I have a sump in the basement that gets a lot of use when the ground is saturated, especially in the spring as snow is melting. A sump failure would cause significant water damage. Checking the sump manually on a regular basis was getting tiresome. There had to be a better way. I know there are sump alarms available commercially, but what is the fun in that? Raspberry Pi to the rescue. My goal was to use it as a monitor that would email me a message if the sump sensor ever activated. That way I could have peace of mind wherever I went with my cel phone.
 
-Raspbian is on the Debian branch of Linux. Most importantly for my purposes, it has drivers to access the GPIO pins on the device. GPIO stands for *general purpose input-output*. The GPIO interface is perfect for measuring a switch with just two states. My sump sensor is a float switch with two states. Perfect.
+Raspbian is on the Debian branch of Linux. Most importantly for my purposes, it has drivers to access the GPIO pins on the device. GPIO stands for *general purpose input-output*. The GPIO interface is perfect for measuring a switch with just two states. My sump sensor is a float switch with two states. A plan is taking shape.
 
 Raspbian also comes with some useful software that is excellent for my purposes. *Node Red* provides a drag and drop interface for logic structure of your program. Reading a switch and sending an email with it is very easy. Another great feature is its web interface - useful to check that the device is running and to see the sensor reading. 
 
