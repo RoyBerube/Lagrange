@@ -43,7 +43,7 @@ print(ss)
 ```
 There was only one issue. After a reboot it would send a false positive. That is the reason for the 50 millisecond delay *time.sleep(.05)* between setting up the GPIO pins and reading them. The pin needs time to achieve its new state. It only matters the first time the script is run after a reboot, but since the delay is insignificant it can be left in without detriment.
 
-I am currently running the Pi headless (no monitor, keyboard or mouse) over my network. *Node Red* can be programmed with a browser over the network, so the graphical interface is still usable. Here is what it looks like:
+I am currently running the Pi headless (no monitor, keyboard or mouse) over my network. *Node Red* can be programmed with a browser over the network, so the graphical interface is easy to access. Here is what it looks like:
 
 ![Node Red](/assets/img/NodeRedSensor.PNG)
 
