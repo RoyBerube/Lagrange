@@ -47,13 +47,13 @@ I am currently running the Pi headless (no monitor, keyboard or mouse) over my n
 
 ![Node Red](/assets/img/NodeRedSensor.PNG)
 
-The rate limiter node is there to limit the amount of emails sent. Without it, an email would be sent every time the Python script is run. I have it sent to 6 hours.
+The rate limiter node is there to limit the amount of emails sent. Without it, an email would be sent every time the Python script is run. I have it set to limit an email message once every 6 hours.
 
 Here is what the web user interface looks like when deployed:
 
 ![Node Red User Interface](/assets/img/NodeRedOutput.PNG)
 
- This also displays the current temperature obtained with a web scraping Python script. When I check that the device is running it is handy to get the temperature at the same time. This pulls the temperature from Environment Canada's reading at Blatchford Field in Edmonton, Alberta. The *Node Red* layout is quite simple:  
+ This also displays the current temperature obtained with a web scraping Python script. When I check that the device is running it is handy to get the temperature at the same time. This pulls the temperature from Environment Canada's reading at Blatchford Field in Edmonton, Alberta. The **Refresh** button forces a web scrape to get the most current reading; the script is set to run automatically every 20 minutes so it might be a little out of date. The *Node Red* layout is quite simple:  
  
  ![Node Red Scraper](/assets/img/NodeRedScraper.PNG)
  
