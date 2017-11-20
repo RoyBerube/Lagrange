@@ -8,7 +8,7 @@ image:
   feature: nails1.jpg
   teaser: nails1-teaser.jpg
   credit: rossettacode, jeremy gibbons
-  creditlink: http://rosettacode.org/wiki/Pi#C.23, http://www.cs.ox.ac.uk/people/jeremy.gibbons/publications/spigot.pdf
+  #creditlink: "http://rosettacode.org/wiki/Pi#C.23", "http://www.cs.ox.ac.uk/people/jeremy.gibbons/publications/spigot.pdf"
 ---
 
 

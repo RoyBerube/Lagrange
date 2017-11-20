@@ -12,11 +12,8 @@
 
 # jekyll-paginate configuration
 paginate:            5
-<<<<<<< HEAD
 disqus:              #"your-disqus"
 encoding: utf-8
-=======
->>>>>>> upstream/gh-pages
 
 # Build settings
 markdown:            kramdown
