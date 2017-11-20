@@ -26,12 +26,14 @@ layout: default
   {% if page.author %}
     {{ page.author }}
   {% else %}
-    {{ site.data.settings.author.name }}
+    {{ site.data.authors.primary.name }}
   {% endif %}
 </span>
+
 {% include social-sharing.html %}
+
 {% include related-posts.html %}
 
-{% if site.disqus %}
+{% if site.data.settings.disqus.comments %}
   {% include disqus.html %}
 {% endif %}

@@ -117,6 +117,22 @@ blockquote p {
 }
 
 /*
+  Thumbnail
+*/
+
+.thumbnail-container {
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.thumbnail-container img{
+  margin-top: -11.5%;
+  margin-bottom: -11.5%;
+}
+
+/*
   Post
 */
 
@@ -288,6 +304,22 @@ pre {
   word-wrap: normal;
 }
 
+/**
+ * Tables
+ */
+ table {
+     border-collapse: collapse;
+     margin-bottom: 30px;
+     width: 100%;
+ }
+
+ table, th, td {
+     border: 1px solid black;
+ }
+ th, td {
+     padding: 15px;
+     text-align: left;
+ }
 
 /*
   Social media icons
@@ -425,4 +457,17 @@ pre {
 
 .fa-codepen:hover {
 	color: black;
+}
+
+.fa-rss-square {
+  padding: 5px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition: .5s;
+}
+
+.fa-rss-square:hover {
+	color: #ff6600;
 }
