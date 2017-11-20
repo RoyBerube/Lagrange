@@ -21,7 +21,7 @@ Raspbian also comes with some useful software that is excellent for my purposes.
 
 After some testing of the *Node Red* switch sensing input I was less enthusiastic about it. It uses edge detection and about 1 or 2 percent of the time would miss detecting a signal transition. With edge detection it only sends a signal again when the switch changes state again. Not good. There had to be a better way.
 
-Luckily, Node Red also gives users an easy way to run an executable script. Python is perfect for this. I decided to use busy polling with the sensor being read at regular intervals - it is currently running every 30 seconds. Here is the script: 
+Fortunately, Node Red also gives users an easy way to run an executable script. Python is perfect for this. I decided to use busy polling with the sensor being read at regular intervals - it is currently running every 30 seconds. Here is the script: 
 ```python
 #!/usr/bin/python3
 import sys 
