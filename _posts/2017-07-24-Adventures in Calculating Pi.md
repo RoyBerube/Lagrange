@@ -12,9 +12,9 @@ image:
 ---
 
 
-I blame Matt Parker and his YouTube channel 'standupmaths'. Every year on Pi day he takes on the topic, and this managed to piqued my interest in how the number is calculated.
+I blame Matt Parker and his YouTube channel 'standupmaths'. Every year on Pi day he takes on the topic, and this managed to pique my interest in how the number is calculated.
 
-Pi is an irrational number, which means it cannot be defined as a fraction and has no repeating sequence of numbers. The last time I checked, someone had calculated it to 4 trillion digits using a home computer. Yeah, really.
+Pi is an irrational number, which means it cannot be defined as a fraction and has no repeating sequence of numbers. The last time I checked, someone had calculated it to 4 trillion digits using a home computer. It took months.
 
 ### A Brief History Lesson
 
@@ -30,7 +30,7 @@ The formula is based on Euler's refinement:
 
 ![Euler Formula](/assets/img/EulerFormula.PNG)
 
-Initially I implemented a spigot version based on a fraction class and while that version worked and was easy to read, it was painfully slow. The fraction class was clearly a huge bottleneck. Using what I had learned, I then wrote an optimized version based on fractions without the fraction class. Here is the code. To use it instantiate the class and call the CalcPi() method.
+Initially I implemented a spigot version based on a fraction class and while that version worked and was easy to read, it was painfully slow. The fraction class was clearly a huge bottleneck. Using what I had learned, I then wrote an optimized version based on fractions without the fraction class. Here is the code. To use it, instantiate the class and call the CalcPi() method.
 
 ```c#
 using System;
@@ -117,6 +117,6 @@ class OptimizedPiSpigot
 }
 ```
 
-The reason to use fractions is that each step has absolute precision without the precision loss if we were to use decimal numbers. Even in my optimized version the fraction values blow up immensely. Note the comments in the code for some timing measurements. Time required increases exponentially; I did not bother to try runs over 100k digits because of this.
+The reason to use fractions is that each step has absolute precision without the precision loss of using decimal numbers. Even in this optimized version the fraction values blow up immensely. Note the comments in the code for some timing measurements. Time required increases exponentially; I did not bother to try runs over 100k digits because of this.
 
 I later experimented with some other algorithms in C# that are much quicker, but this is enough for now.
