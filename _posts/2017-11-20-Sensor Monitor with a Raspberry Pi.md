@@ -23,7 +23,7 @@ After some testing of the *Node Red* switch sensing input I was less enthusiasti
 
 Luckily, Node Red also gives users an easy way to run an executable script. Python is perfect for this. I decided to use busy polling with the sensor being read at regular intervals - it is currently running every 30 seconds. Here is the script: 
 ```python
-#!/usr/bin/env python
+#!/usr/bin/python3
 import sys 
 import RPi.GPIO as GPIO
 import time
