@@ -76,4 +76,4 @@ temp = current.find("temperature").text
 print(temp)
 ```
 
-That is about it for this setup. To make it more reliable I run a cron job to reboot the device every night - I was having problems with the Pi locking up after a few weeks of running continuously.
+That is about it for this setup. To make it more reliable I added a cron job to reboot the device every night - I was having problems with the Pi shutting down after a few weeks of running continuously.
