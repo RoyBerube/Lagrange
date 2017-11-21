@@ -17,7 +17,7 @@ I have a sump in the basement that gets a lot of use when the ground is saturate
 
 Raspbian is on the Debian branch of Linux. Most importantly for my purposes, it has drivers to access the GPIO pins on the device. GPIO stands for *general purpose input-output*. The GPIO interface is perfect for measuring a switch with just two states. My sump sensor is a float switch with two states. A plan is taking shape.
 
-Raspbian also comes with some useful software that is excellent for my purposes. *Node Red* provides a drag and drop interface for logic structure of your program. Reading a switch and sending an email with it is very easy. Another great feature is its web interface - useful to check that the device is running and to see the sensor reading. 
+Raspbian also comes with some useful software that is excellent for my purposes. *Node Red* provides a drag and drop interface for programming the logic structure. Reading a switch and sending an email with it is very easy. Another great feature is its web interface - useful to check that the device is running and to see the sensor reading. 
 
 After some testing of the *Node Red* switch sensing input I was less enthusiastic about it. It uses edge detection and about 1 or 2 percent of the time would miss detecting a signal transition. With edge detection it only sends a signal again when the switch changes state again. Not good. There had to be a better way.
 
@@ -41,7 +41,7 @@ ss = (ss *-1) +1
 # Any printed output is seen as a message payload. Simple.
 print(ss)
 ```
-There was only one issue. After a reboot it would send a false positive. That is the reason for the 50 millisecond delay *time.sleep(.05)* between setting up the GPIO pins and reading them. The pin needs time to achieve its new state. It only matters the first time the script is run after a reboot, but since the delay is insignificant it can be left in without detriment.
+There was only one issue. After a reboot it would send a false positive. That is the reason for the 50 millisecond delay *time.sleep(.05)* between setting up the GPIO pins and reading them. The GPIO pins can be set to either send or receive a signal. After setting it to receive a signal, the pin needs time to achieve its new state. It only matters the first time the script is run after a reboot, but since the delay is insignificant it can be left in without detriment.
 
 I am currently running the Pi headless (no monitor, keyboard or mouse) over my network. *Node Red* can be programmed with a browser over the network, so the graphical interface is easy to access. Here is what it looks like:
 
